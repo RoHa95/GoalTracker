@@ -186,6 +186,7 @@ function GoalCard({ goal }) {
 px-2
 py-1
 rounded
+text-black
 
 ${
   goal.status === "active"

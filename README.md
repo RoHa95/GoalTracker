@@ -1,16 +1,99 @@
-# React + Vite
+# Goal Tracker Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+A React-based goal tracking application that allows users to create goals, track progress, earn XP, maintain streaks, and manage goals through a responsive dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features Checklist
 
-## React Compiler
+* [x] Create Goal
+* [x] Edit Goal
+* [x] Delete Goal
+* [x] View Goal Details
+* [x] Progress Tracking
+* [x] Automatic Goal Completion
+* [x] XP System
+* [x] Streak System
+* [x] Dashboard Summary
+* [x] Categories Overview
+* [x] Search Goals
+* [x] Filter Goals
+* [x] Sort Goals
+* [x] Light/Dark Theme
+* [x] English/Persian Languages
+* [x] RTL/LTR Layout Switching
+* [x] LocalStorage Persistence
+* [x] Responsive Design
+* [x] Custom 404 Page
+* [x] Export Goals (JSON)
+* [x] Restore Completed Goals
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## How to Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build project:
+
+```bash
+npm run build
+```
+
+---
+
+## Language & RTL/LTR Support
+
+The application supports two languages:
+
+* English (LTR)
+* Persian (RTL)
+
+Changing the language automatically updates the layout direction of the application.
+
+---
+
+## Streak Rules
+
+* First progress log starts a streak of 1.
+* Logging progress on the next consecutive day increases the streak.
+* Missing one or more days resets the streak to 1.
+* Multiple logs on the same day do not increase the streak.
+
+---
+
+## XP Rules
+
+* Each progress update awards 20 XP.
+* XP is accumulated and displayed on the Dashboard.
+
+---
+
+## Screenshots
+
+### Desktop
+
+![Desktop Screenshot](./screenshots/desktop-dashboard.png),
+![Desktop Screenshot](./screenshots/desktop-search&filter.png),
+![Desktop Screenshot](./screenshots/desktop-add.png),
+![Desktop Screenshot](./screenshots/desktop-setting.png),
+![Desktop Screenshot](./screenshots/desktop-darkmode.png),
+
+### Mobile
+
+![Mobile Screenshot](./screenshots/mobile-dashboard.png),
+![Mobile Screenshot](./screenshots/mobile-menu.png),
+![Mobile Screenshot](./screenshots/mobile-search&filter.png),
+![Mobile Screenshot](./screenshots/mobile-add.png),
+![Mobile Screenshot](./screenshots/mobile-setting.png),
+![Mobile Screenshot](./screenshots/mobile-darkmode.png)

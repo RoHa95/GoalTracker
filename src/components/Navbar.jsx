@@ -10,7 +10,7 @@ function Navbar({ openMenu, setOpenMenu }) {
                     text-blue-800 text-lg font-semibold 
                       border-b-2 border-gray-200">
         <div className="sm:col-start-1 sm:col-end-4 md:col-end-4
-                        px-2 bg-white w-full h-full
+                        px-2 bg-white dark:bg-gray-700 w-full h-full
         ">
           <Link to="/">
             <div>Goals Tracker</div>

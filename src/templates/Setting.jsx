@@ -61,7 +61,7 @@ function Setting() {
  rounded
  cursor-pointer
  mr-2
- ${language === "en" ? "bg-green-500 text-white" : ""}`}
+ ${language === "en" ? "bg-blue-500 text-white" : ""}`}
       >
         English
       </button>
@@ -72,7 +72,7 @@ function Setting() {
  py-2
  rounded
  cursor-pointer
- ${language === "fa" ? "bg-green-500 text-white" : ""}`}
+ ${language === "fa" ? "bg-blue-500 text-white" : ""}`}
       >
         فارسی
       </button>
@@ -91,7 +91,7 @@ function Setting() {
           onClick={() => setTheme("light")}
           className={`px-4 py-2 rounded border cursor-pointer
     
-    ${theme === "light" ? "bg-green-500 text-white" : ""}
+    ${theme === "light" ? "bg-blue-500 text-white" : ""}
   `}
         >
           {t.light}
@@ -104,7 +104,7 @@ function Setting() {
     rounded
     border
 cursor-pointer
-    ${theme === "dark" ? "bg-green-500 text-white" : ""}
+    ${theme === "dark" ? "bg-blue-500 text-white" : ""}
   `}
         >
           {t.dark}
@@ -125,7 +125,7 @@ cursor-pointer
       <button
         onClick={exportGoals}
         className="
-    bg-green-500
+    bg-blue-500
     text-white
     px-4
     py-2
