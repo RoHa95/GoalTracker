@@ -6,7 +6,7 @@ A React-based goal tracking application that allows users to create goals, track
 
 ## 🚀 Features Checklist
 
-- [x] Create Goal
+- [ ] Create Goal
 - [x] Edit Goal
 - [x] Delete Goal
 - [x] View Goal Details
