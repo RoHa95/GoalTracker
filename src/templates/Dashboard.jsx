@@ -180,6 +180,7 @@ function Dashboard() {
     gap-4
   "
           >
+            {activeGoals.length === 0 && <p>No Goal has been set yet!!!</p>}
             {activeGoals.map((goal) => (
               <GoalCard key={goal.id} goal={goal} />
             ))}
@@ -202,6 +203,7 @@ function Dashboard() {
     lg:grid-cols-3
     gap-4"
           >
+            {goals.length === 0 && <p>No Goal has been completed yet!!!</p>}
             {goals
               .filter((goal) => goal.status === "completed")
               .slice(0, 3)

@@ -105,6 +105,18 @@ function GoalCard({ goal }) {
       }),
     );
   };
+  const restoreGoal = () => {
+    setGoals((prev) =>
+      prev.map((g) =>
+        g.id === goal.id
+          ? {
+              ...g,
+              status: "active",
+            }
+          : g,
+      ),
+    );
+  };
   const togglePause = () => {
     if (goal.status === "completed") {
       return;
@@ -198,6 +210,7 @@ ${
     px-2
     py-1
     border
+    cursor-pointer
     rounded
     hover:bg-red-100
   "
@@ -251,6 +264,22 @@ ${
         >
           Edit
         </Link>
+        {goal.status === "completed" && (
+          <button
+            onClick={restoreGoal}
+            className="
+       
+        cursor-pointer
+        px-2
+        py-1
+        border
+        rounded
+        hover:bg-indigo-200
+      "
+          >
+            Restore
+          </button>
+        )}
       </div>
     </div>
   );
